@@ -30,6 +30,13 @@ So we have the wireless communications to make people's life easier.
 Majority of the wireless communications is using infrared to communicate. The transmitter is a infrared LED, receiver will be a sensor
 module. This module is to convert the raw signal to a clean signal for the protocol to decode it.
 
+The figure below shows 2 signals, 'IR Detect' is the raw signal, 'IR Receiver' is the signal after modulation by the receiver. So the
+signal from the Infrared LED is the raw signal, which is the signal 'IR Detect'. The LED will blink, in a frequency range of 34kHz to 40kHz, depends on the protocol used, to produce the signal and transmit to the receiver or sensor.
+*Example of the wavefrom taken from [here](https://sigrok.org/gitweb/?p=sigrok-dumps.git;a=tree;hb=HEAD)*
+![raw vs modulated]()
+
+
+
 Procedure
 ---------
 I will be directly working on the board, so a power supply of 3V is needed here. From the figure above, some soldering works
