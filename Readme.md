@@ -29,23 +29,25 @@ So we have the wireless communications to make people's life easier.
 
 **How to communicates**
 
-Majority of the wireless communications is using infrared to communicate. The transmitter is a infrared LED, receiver will be a sensor
-module. This module is to convert the raw signal to a clean signal for the protocol to decode it.
+Majority of the wireless communications is using infrared to communicate. It is a simplex type communications, which means the communication channel only send information, is a one-way communication. The transmitter is a infrared LED, receiver will be a sensor
+module. This module is to convert the raw signal to a clean signal for the protocol to decode it as the figure shows below.
 
-The figure below shows 2 signals, 'IR Detect' is the raw signal, 'IR Receiver' is the signal after modulation by the receiver. So the
-signal from the Infrared LED is the raw signal, which is the signal 'IR Detect'. The LED will blink, in a frequency range of 34kHz to 40kHz, depends on the protocol used, to produce the signal and transmit to the receiver or sensor.
+The figure below shows 2 signals, 'IR Detected' is the raw signal, 'IR Receiver' is the signal after modulation by the receiver. So the
+signal from the Infrared LED is the raw signal, which is the signal 'IR Detect'. The *LED* will blink, in a frequency range of 34kHz to 40kHz, depends on the protocol used, to produce such signal and transmit to the receiver. Then, the *receiver* will take in the signal and produce such signal as 'IR Receiver'. Notice the delay there, around 200 us, is because the modulation of the signal needs time to process and output a clean signal, and this is the signal for the decoding process.
 
-*Example of the wavefrom taken from [here](https://sigrok.org/gitweb/?p=sigrok-dumps.git;a=tree;hb=HEAD)*
+*Example of the wavefrom taken from [here](https://sigrok.org/gitweb/?p=sigrok-dumps.git;a=tree;f=ir/nec/hama_8in1/tv_matsui_0001;h=6a7407c34054449832ee22e4d3cadb91596db981;hb=HEAD)*
 ![raw vs modulated](https://github.com/Bennyaw/Infrared-remote-control/blob/master/doc/infrared%20communication/raw%20vs%20modulated.PNG)
 
+So the full waveform will be something like below
+![full waveform](https://github.com/Bennyaw/Infrared-remote-control/blob/master/doc/infrared%20communication/full%20waveform.PNG)
 
+*Reference video from Youtube [here]*(https://www.youtube.com/watch?v=BUvFGTxZBG8&t=545s)
 
+**What is NEC protocol**
+You maybe wondering how does the transmitter
 
 
 Procedure
 ---------
 I will be directly working on the board, so a power supply of 3V is needed here. From the figure above, some soldering works
 is done there for conveniences.
-
-Infrared Protocols
-------------------
