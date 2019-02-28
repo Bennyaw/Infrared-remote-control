@@ -41,7 +41,7 @@ signal from the Infrared LED is the raw signal, which is the signal 'IR Detect'.
 So the full waveform will be something like below
 ![full waveform](https://github.com/Bennyaw/Infrared-remote-control/blob/master/doc/infrared%20communication/full%20waveform.PNG)
 
-*Reference video from Youtube [here]*(https://www.youtube.com/watch?v=BUvFGTxZBG8&t=545s)
+*Reference video from Youtube* [here](https://www.youtube.com/watch?v=BUvFGTxZBG8&t=545s)
 
 **What is NEC protocol**
 You maybe wondering how does the transmitter
