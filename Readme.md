@@ -44,9 +44,13 @@ So the full waveform will be something like below
 *Reference video from Youtube* [here](https://www.youtube.com/watch?v=BUvFGTxZBG8&t=545s)
 
 **What is NEC protocol**
+<<<<<<< HEAD
 You maybe wondering how does the infrared transmitter send signals. A high or low signal in infrared communication doesn't represent a logical '1' or '0' respectively. It needs to follow certain formats to determine either is a '1' or '0'. There are many protocols used nowadays, some popular protocols such as RC-4, RC-5, Sony and NEC, are widely used in infrared communications.
 
 In this project here, the remote control 2,NEC HITACHI CP-X2530WN, used NEC protocol as a infrared communication. The waveform above is the signal transmitted using NEX protocol.
+=======
+
+>>>>>>> 780257b5638c328fb972391be5b47af4a9f3d584
 
 
 Procedure
